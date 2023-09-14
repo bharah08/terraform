@@ -17,3 +17,15 @@ variable "instance_count" {
    type        = number
    default     = "2"
 }
+### it will create number of users
+variable "user_names" {
+  description = "IAM usernames"
+  type        = list(string)
+  default     = ["user1", "user2", "user3s"]
+}
+### it will enable or disable ip of instance
+variable "enable_public_ip" {
+  description = "Enable public IP address"
+  type        = bool
+  default     = true
+}
