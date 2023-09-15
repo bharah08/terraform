@@ -38,4 +38,3 @@ resource "aws_instance" "ec2_example" {
            Name = "${local.staging_env} - Terraform EC2"
    }
 }
-BASH
